@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fiewin</title>
+        <link  rel="icon" type="image/x-icon" href="ram.ico">
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+        body {
+            color: black;
+            width: 250px;
+            height: 250px;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: 100% 100%;
+        }
+        p.dotted {border-style: dotted ;}
+        p.double {border-style: double; color: blue;}
+        
+    </style>
+       
+    </head>
+    <body><center>
+        <p> This is a link button </p>
+        <h1>Click this link button to google</h1>
+       <a href="https://www.google.com/" target="_parent">click this</a>
+       <button onclick="document.location='https://www.google.com'">HTML Tutorial</button>
+       <p><a href="#c4">jump to chapter 4</a></p>
+       <h2 id="c4"> Chapter 4</h2>
+       <img src="ram.jpg" style="width: 400px; height:379px" alt="Desk" usemap="#desk">
+       <map name="desk">
+            <area shape="rect" coords="34,44,270,350" alt="Keyboard" href="https://en.wikipedia.org/wiki/Computer_keyboard">
+            <area shape="rect" coords="290,172,333,250" alt="phone" href="https://en.wikipedia.org/wiki/Mobile_phone" onclick="myfunction1()">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffe" href="https://en.wikipedia.org/wiki/Coffee" onclick="myfunction()"> 
+        </map>
+        <script>
+            function myfunction() {
+                alert("YOu clicked the coffe cup!");
+            }
+            function myfunction1() {
+                alert("you click phone!");
+            }
+        </script>
+        <p class="double">anuj </p>
+        <picture>
+            <source media="(min-width: 650px)" srcset="ram.jpg">
+            <source media="(min-width: 465px)" srcset="anuj.jpg">
+            <img src="head.png">
+        </picture>
+        <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Anuj</td>
+            <td>BCA</td>
+            <td>19</td>
+        </tr>
+    </table>
+    </body></center>
+<html>
